@@ -47,34 +47,79 @@ public class App {
 
     //todo Task 5
     public void swapTwoNumbers(){
-        int tmp;
-        int no1;
-        int no2;
+
+        int x;
+        int y;
         Scanner var = new Scanner(System.in);
 
         System.out.println("Before Swap:");
-        no1 = var.nextInt();
+        x = var.nextInt();
         System.out.print("x: ");
-        no2 = var.nextInt();
+        y = var.nextInt();
         System.out.print("y: ");
         System.out.println("After Swap:");
-        tmp = no1;
-        no1 = no2;
-        no2 = tmp;
-        System.out.println("x: " + no1);
-        System.out.println("y: " + no2);
+        x = x + y;
+        y = x - y;
+        x = x - y;
+
+
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
 
 
     }
 
     //todo Task 6
     public void compareTwoNumbers(){
+
+        int no1;
+        int no2;
+
+        Scanner var = new Scanner(System.in);
+
+        System.out.print("n1: ");
+        no1 = var.nextInt();
+
+        System.out.print("n2: ");
+        no2 = var.nextInt();
+
+        if (no2 > no1){
+            System.out.println("n2 > n1");
+        }
+
+        if (no1 > no2){
+            System.out.println("n1 > n2");
+        }
+
+        if (no1 == no2){
+            System.out.println("n1 == n2");
+        }
         // input your solution here
     }
 
     //todo Task 7
     public void ratingSalesPerson(){
-        // input your solution here
+        int no1;
+        int no2;
+        Scanner var = new Scanner(System.in);
+        System.out.print("Enter annual Revenue: ");
+        no1 = var.nextInt();
+
+        if (no1 < 0 | no1 >= 100000){
+            System.out.println("Invalid Revenue");
+        }
+        if (no1 >= 0 & no1 < 20000){
+            System.out.println("Poor Sales Revenue");
+        }
+        if (no1 >= 20000 & no1 < 50000){
+            System.out.println("Average Sales Revenue");
+        }
+        if (no1 >= 50000 & no1 < 80000){
+            System.out.println("Good Sales Revenue");
+        }
+        if (no1 >= 80000 & no1 < 100000){
+            System.out.println("Excellent Sales Revenue");
+        }
     }
 
     //todo Task 8
