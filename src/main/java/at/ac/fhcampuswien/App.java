@@ -171,7 +171,25 @@ public class App {
 
     //todo Task 10
     public void transposedNumbers(){
-        // input your solution here
+        int z2;
+        int y;
+        int z;
+        int z1;
+        int z3;
+        int ges;
+
+        Scanner var = new Scanner(System.in);
+        System.out.print("Number: ");
+        y = var.nextInt();
+
+            z1 = y/100;
+            z = y%100;
+            z2 = z/10;
+            z3 = z%10;
+
+
+            ges = z3*100 + z2*10 + z1;
+        System.out.println(ges);
     }
 
 
