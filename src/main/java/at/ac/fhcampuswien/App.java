@@ -124,12 +124,49 @@ public class App {
 
     //todo Task 8
     public void getCommissionRate(){
-        // input your solution here
+
+        int x;
+        Scanner var = new Scanner(System.in);
+        System.out.print("Enter CommissionClass: ");
+        x = var.nextInt();
+
+                switch (x){
+                    case 1:
+                        System.out.println("Your Commission Rate was set to 0.01");
+                        break;
+                    case 2:
+                        System.out.println("Your Commission Rate was set to 0.02");
+                        break;
+                    case 3:
+                        System.out.println("Your Commission Rate was set to 0.03");
+                        break;
+                    case 4:
+                        System.out.println("Your Commission Rate was set to 0.04");
+                        break;
+                    default:
+                        System.out.println("Your Commission Rate was set to 0.0");
+                        break;
+
+
+
+                }
     }
 
     //todo Task 9
     public void leapyear(){
-        // input your solution here
+        int x;
+        Scanner var = new Scanner(System.in);
+        System.out.print("Year: ");
+        x = var.nextInt();
+
+
+
+        if (x%4 == 0 & x%400 == 0){
+            System.out.println("Leapyear");
+        }
+        else {
+            System.out.println("Not a Leapyear");
+        }
     }
 
     //todo Task 10
