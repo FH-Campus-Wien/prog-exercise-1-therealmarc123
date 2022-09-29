@@ -13,6 +13,15 @@ public class App {
     //todo Task 2
     public void helloRobot(){
         // input your solution here
+        System.out.println("0123456789012345678901");
+        System.out.println("");
+        System.out.println("           __");
+        System.out.println(" _(\\ |@@|");
+        System.out.println("(__/\\__ \\--/ __");
+        System.out.println("    \\___|----| | __");
+        System.out.println("        \\ }{ /\\ )_ / _\\");
+                System.out.println("        /\\__/\\ \\__O (__");
+        System.out.println("(--/\\--) \\");
     }
 
     //todo Task 3
@@ -23,11 +32,39 @@ public class App {
     //todo Task 4
     public void addTwoNumbers(){
         // input your solution here
+        Scanner var = new Scanner(System.in);
+
+        int zahl1;
+        int zahl2;
+        int summe;
+
+        zahl1 = var.nextInt();
+        zahl2 = var.nextInt();
+
+        summe = zahl1 + zahl2;
+        System.out.println(summe);
     }
 
     //todo Task 5
     public void swapTwoNumbers(){
-        // input your solution here
+        int tmp;
+        int no1;
+        int no2;
+        Scanner var = new Scanner(System.in);
+
+        System.out.println("Before Swap:");
+        no1 = var.nextInt();
+        System.out.print("x: ");
+        no2 = var.nextInt();
+        System.out.print("y: ");
+        System.out.println("After Swap:");
+        tmp = no1;
+        no1 = no2;
+        no2 = tmp;
+        System.out.println("x: " + no1);
+        System.out.println("y: " + no2);
+
+
     }
 
     //todo Task 6
