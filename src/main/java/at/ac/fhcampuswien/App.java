@@ -38,7 +38,9 @@ public class App {
         double doubleVar = 99.9;
         double doubleVar2 = 8.88e1;
 
-        System.out.println((charVar + float1 + float2 + longVar + intVar012 + intVar0xface +doubleVar + doubleVar2));
+        sum = (int) charVar + (int) float1 + (int) float2 + (int) longVar + intVar012 + intVar0xface + (int) doubleVar + (int) doubleVar2;
+
+        System.out.println(sum);
 
 
         //0xface, 012, 80L, 44e-1f, 5.5f, 8.88e1 und 99.9
